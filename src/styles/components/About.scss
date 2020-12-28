@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Righteous&display=swap");
+
+.about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-title {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    color: #16161d;
+    font-weight: 900;
+    font-size: 2.25rem;
+    margin-top: 0.2em;
+    font-size: 93px;
+    font-weight: 700;
+    line-height: 0.9em;
+    white-space: nowrap;
+}
