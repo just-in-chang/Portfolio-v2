@@ -1,9 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 function Icons() {
     return (
         <div className="icon-container">
+            <a href="mailto:justin_chang@ucsb.edu">
+                <FontAwesomeIcon className="icon" icon={faEnvelope} />
+            </a>
+            <FontAwesomeIcon
+                className="icon"
+                icon={faFile}
+                onClick={() => {
+                    window.open(
+                        "https://drive.google.com/file/d/1xAvThu67bb_-GqvdBXSydahaPtVK3TwR/view"
+                    );
+                }}
+            />
             <FontAwesomeIcon
                 className="icon"
                 icon={faGithub}
