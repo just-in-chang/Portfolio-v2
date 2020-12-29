@@ -1,4 +1,5 @@
 import Icons from "./Icons";
+import Ocean from "./Ocean";
 
 function About() {
     return (
@@ -6,6 +7,7 @@ function About() {
             <div className="about-title">JUSTIN</div>
             <div className="about-title">CHANG</div>
             <Icons />
+            <Ocean />
         </div>
     );
 }
