@@ -1,14 +1,51 @@
-canvas {
-    background-color: #3ad3e5;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Righteous&display=swap");
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    $children: 6;
+    z-index: #{- ($children + 1)};
+
+    & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    @for $i from 0 to $children {
+        & > *:nth-child(#{$i + 1}) {
+            z-index: #{- ($i + 1)};
+        }
+    }
 }
 
-.ocean {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100;
+.about-name-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -3;
+}
+
+.about-title {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    margin-top: 0.2em;
+    font-size: 93px;
+    font-weight: 700;
+    line-height: 0.9em;
+    white-space: nowrap;
+}
+
+canvas {
+    width: 100%;
     height: 100vh;
-    max-height: 100vh;
-    width: 100vw;
-    max-width: 100vw;
 }

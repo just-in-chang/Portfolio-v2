@@ -1,10 +1,11 @@
-import About from "./components/About";
-import { useEffect, useState, useRef } from "react";
+import Ocean from "./components/Ocean";
+import Bio from "./components/Bio";
 
 function App() {
     return (
-        <div className="App">
-            <About></About>
+        <div className="app">
+            <Ocean />
+            <Bio />
         </div>
     );
 }

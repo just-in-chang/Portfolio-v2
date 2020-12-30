@@ -1,4 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import Hill1 from "./ocean/Hill1";
+import Hill2 from "./ocean/Hill2";
+import Icons from "./Icons";
+import Lights from "./ocean/Lights";
+import Water from "./ocean/Water";
+
+import { useState, useEffect } from "react";
+import Parallax from "react-rellax";
 
 const currentWidth = () => {
     return (
@@ -17,57 +24,8 @@ const currentHeight = () => {
 };
 
 function Ocean() {
-    const canvasRef = useRef(null);
     let [width, setWidth] = useState(currentWidth());
     let [height, setHeight] = useState(currentHeight());
-
-    const animate = (ctx) => {
-        let time = new Date();
-        ctx.clearRect(0, 0, width, height);
-
-        ctx.beginPath();
-        ctx.moveTo(
-            -50 - 15 * Math.sin(time.getMilliseconds() / 200) + width / 4,
-            0
-        );
-        ctx.lineTo(
-            -100 - 30 * Math.sin(time.getMilliseconds() / 200) + width / 4,
-            height
-        );
-        ctx.lineTo(
-            100 + 30 * Math.sin(time.getMilliseconds() / 200) + width / 4,
-            height
-        );
-        ctx.lineTo(
-            50 + 15 * Math.sin(time.getMilliseconds() / 200) + width / 4,
-            0
-        );
-        ctx.fill();
-        ctx.closePath();
-        requestAnimationFrame(() => {
-            animate(ctx);
-        });
-    };
-
-    const drawOcean = () => {
-        let ctx = canvasRef.current.getContext("2d");
-        ctx.width = width;
-        ctx.height = height;
-        ctx.fillStyle = "#48D7E8";
-
-        ctx.beginPath();
-        ctx.moveTo(-50 + width / 4, 0);
-        ctx.lineTo(-100 + width / 4, height);
-        ctx.lineTo(100 + width / 4, height);
-        ctx.lineTo(50 + width / 4, 0);
-        ctx.fill();
-        ctx.closePath();
-        animate(ctx);
-    };
-
-    useEffect(() => {
-        drawOcean();
-    }, [width, height]);
 
     useEffect(() => {
         let widthTimeoutId = null;
@@ -86,12 +44,26 @@ function Ocean() {
     }, []);
 
     return (
-        <canvas
-            className="ocean"
-            ref={canvasRef}
-            width={window.innerWidth}
-            height={window.innerHeight}
-        />
+        <div className="about">
+            <Parallax speed={0}>
+                <Lights width={width} height={height} />
+            </Parallax>
+            <Parallax speed={-3}></Parallax>
+            <Parallax className="about-name-container" speed={-15}>
+                <div className="about-title">JUSTIN</div>
+                <div className="about-title">CHANG</div>
+                <Icons />
+            </Parallax>
+            <Parallax speed={-9}>
+                <Hill2 width={width} height={height} />
+            </Parallax>
+            <Parallax speed={-12}>
+                <Hill1 width={width} height={height} />
+            </Parallax>
+            <Parallax speed={-15}>
+                <Water width={width} height={height} />
+            </Parallax>
+        </div>
     );
 }
 
