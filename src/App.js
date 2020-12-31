@@ -1,8 +1,11 @@
 import Bio from "./components/Bio";
+import Chest from "./components/ocean/Chest";
 import Hill from "./components/ocean/Hill";
 import Icons from "./components/Icons";
+import Jellyfish from "./components/ocean/Jellyfish";
 import Lights from "./components/ocean/Lights";
-import Swim from "./components/ocean/Swim";
+import Shipwreck from "./components/ocean/Shipwreck";
+import Turtle from "./components/ocean/Turtle";
 import Water from "./components/ocean/Water";
 
 import { useState, useEffect } from "react";
@@ -50,10 +53,6 @@ function App() {
                 <Water width={width} height={height} />
             </Parallax>
 
-            <Parallax speed={-12}>
-                <Swim src={"./ocean/tynamo.gif"} />
-            </Parallax>
-
             <Parallax speed={-9}>
                 <Hill
                     width={width}
@@ -62,6 +61,14 @@ function App() {
                     color="#4DB9E7"
                     start={0.4}
                 />
+            </Parallax>
+
+            <Parallax speed={-14.25}>
+                <Turtle />
+            </Parallax>
+
+            <Parallax speed={-10}>
+                <Jellyfish />
             </Parallax>
 
             <Parallax speed={-6}>
@@ -96,11 +103,19 @@ function App() {
                     height={height}
                     imgLink="./ocean/hill4.png"
                     color="#E8CA84"
-                    start={0.8}
+                    start={0.75}
                 />
             </Parallax>
 
             <Parallax speed={3}>
+                <Shipwreck />
+            </Parallax>
+
+            <Parallax speed={3}>
+                <Chest />
+            </Parallax>
+
+            <Parallax speed={4.5}>
                 <Lights width={width} height={height} />
                 <Bio />
             </Parallax>
