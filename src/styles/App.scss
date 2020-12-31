@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Righteous&display=swap");
+
+.ocean {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 0;
+
+    & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    $children: 8;
+    @for $i from 0 to $children {
+        & > *:nth-child(#{$i + 1}) {
+            z-index: #{- (($children)- ($i))};
+        }
+    }
+}
+
+.ocean-name-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -3;
+}
+
+.ocean-title {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    margin-top: 0.2em;
+    font-size: 93px;
+    font-weight: 700;
+    line-height: 0.9em;
+    white-space: nowrap;
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+}
