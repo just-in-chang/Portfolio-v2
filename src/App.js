@@ -2,6 +2,7 @@ import Bio from "./components/Bio";
 import Hill from "./components/ocean/Hill";
 import Icons from "./components/Icons";
 import Lights from "./components/ocean/Lights";
+import Swim from "./components/ocean/Swim";
 import Water from "./components/ocean/Water";
 
 import { useState, useEffect } from "react";
@@ -49,13 +50,21 @@ function App() {
                 <Water width={width} height={height} />
             </Parallax>
 
-            <Parallax speed={-12}></Parallax>
+            <Parallax speed={-12}>
+                <Swim
+                    width={width}
+                    height={height}
+                    start={0.2}
+                    totalFrames={79}
+                />
+            </Parallax>
 
             <Parallax speed={-9}>
                 <Hill
                     width={width}
                     height={height}
-                    imgLink="https://i.imgur.com/WMmmbjC.png"
+                    // imgLink="https://i.imgur.com/WMmmbjC.png"
+                    imgLink="./ocean/hill1.png"
                     color="#4DB9E7"
                     start={0.4}
                 />
