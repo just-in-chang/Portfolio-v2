@@ -1,7 +1,6 @@
 import Bio from "./components/Bio";
 import Chest from "./components/ocean/Chest";
 import Hill from "./components/ocean/Hill";
-import Icons from "./components/Icons";
 import Jellyfish from "./components/ocean/Jellyfish";
 import Lights from "./components/ocean/Lights";
 import Shipwreck from "./components/ocean/Shipwreck";
@@ -84,7 +83,7 @@ function App() {
             <Parallax className="ocean-name-container" speed={-12}>
                 <div className="ocean-title">JUSTIN</div>
                 <div className="ocean-title">CHANG</div>
-                <Icons />
+                <div className="ocean-title2">Software Engineer</div>
             </Parallax>
 
             <Parallax speed={-3}>
