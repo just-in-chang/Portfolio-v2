@@ -6,7 +6,6 @@ function Swim(props) {
     const drawSwim = (ctx, frames, frame, x) => {
         ctx.clearRect(0, 0, props.width, props.height);
         ctx.drawImage(frames[frame], x, ctx.height * props.start);
-        // ctx.drawImage(frames[frame], 0, 0);
 
         frame++;
         frame %= props.totalFrames;
@@ -23,21 +22,13 @@ function Swim(props) {
         let ctx = swimRef.current.getContext("2d");
         ctx.width = props.width;
         ctx.height = props.height;
-        ctx.globalAlpha = 0.4;
+        ctx.globalAlpha = 0.3;
 
         let frames = new Array(props.totalFrames);
         for (let i = 0; i < props.totalFrames; i++) {
             let imgPh = new Image();
 
-            imgPh.src = "/tynamo/frame_0_delay-0.03s.gif";
-
-            imgPh.src =
-                i % 2 == 0
-                    ? `https://i.imgur.com/oRdxfkq.gif`
-                    : "https://i.imgur.com/u3QXvf5.png";
-
-            // imgPh.src = "https://i.imgur.com/u3QXvf5.png";
-            // imgPh.src = "https://i.imgur.com/oRdxfkq.gif";
+            imgPh.src = `${props.origin}/frame${i}.gif`;
             imgPh.onload = () => {
                 frames[i] = imgPh;
                 if (i == 78) drawSwim(ctx, frames, 0, 0);

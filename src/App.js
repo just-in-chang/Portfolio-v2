@@ -54,7 +54,8 @@ function App() {
                 <Swim
                     width={width}
                     height={height}
-                    start={0.2}
+                    start={0.125}
+                    origin={"./ocean/tynamo"}
                     totalFrames={79}
                 />
             </Parallax>
@@ -63,7 +64,6 @@ function App() {
                 <Hill
                     width={width}
                     height={height}
-                    // imgLink="https://i.imgur.com/WMmmbjC.png"
                     imgLink="./ocean/hill1.png"
                     color="#4DB9E7"
                     start={0.4}
@@ -74,7 +74,7 @@ function App() {
                 <Hill
                     width={width}
                     height={height}
-                    imgLink="https://i.imgur.com/6qSjN5g.png"
+                    imgLink="./ocean/hill2.png"
                     color="#2FA1D7"
                     start={0.5}
                 />
@@ -90,7 +90,7 @@ function App() {
                 <Hill
                     width={width}
                     height={height}
-                    imgLink="https://i.imgur.com/l9urhcC.png"
+                    imgLink="./ocean/hill3.png"
                     color="#0272BA"
                     start={0.6}
                 />
@@ -100,7 +100,7 @@ function App() {
                 <Hill
                     width={width}
                     height={height}
-                    imgLink="https://i.imgur.com/9uymSl7.png"
+                    imgLink="./ocean/hill4.png"
                     color="#E8CA84"
                     start={0.8}
                 />
