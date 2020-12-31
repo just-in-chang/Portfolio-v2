@@ -51,13 +51,7 @@ function App() {
             </Parallax>
 
             <Parallax speed={-12}>
-                <Swim
-                    width={width}
-                    height={height}
-                    start={0.125}
-                    origin={"./ocean/tynamo"}
-                    totalFrames={79}
-                />
+                <Swim src={"./ocean/tynamo.gif"} />
             </Parallax>
 
             <Parallax speed={-9}>
