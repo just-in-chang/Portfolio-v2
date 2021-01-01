@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Chest from "./components/ocean/Chest";
+import Experience from "./components/Experience";
 import Hill from "./components/ocean/Hill";
 import Icons from "./components/Icons";
 import Jellyfish from "./components/ocean/Jellyfish";
@@ -119,6 +120,7 @@ function App() {
             <Parallax speed={4.5}>
                 <Lights width={width} height={height} />
                 <About />
+                <Experience />
             </Parallax>
 
             <>

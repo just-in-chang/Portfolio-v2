@@ -1,0 +1,87 @@
+.experience {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10vh;
+}
+
+.experience-jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-label {
+    font-weight: bold;
+    font-size: 4vh;
+    box-sizing: border-box;
+    padding-left: 20vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 60vw;
+    height: 40vh;
+    box-shadow: 0 0 3vh 3vh rgba(0, 0, 0, 0.075);
+    overflow: hidden;
+    border-radius: 5vh;
+}
+
+.job-company {
+    font-weight: bold;
+}
+
+.job-container {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    text-decoration: none;
+    color: black;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.75vh;
+}
+
+.job-image {
+    height: 40vh;
+}
+
+.job-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.job-skills {
+    display: flex;
+    flex-direction: row;
+    & > * {
+        width: 2vw;
+        padding-right: 1vw;
+    }
+}
+
+.job-title {
+    font-size: 3vh;
+}
+
+.job-text {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+
+    & > * {
+        padding: 1vh;
+    }
+}

@@ -1,14 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSortUp } from "@fortawesome/free-solid-svg-icons";
+
 function Navbar() {
     return (
         <div className="navbar">
-            <a href="#projects" className="navbar-section">
-                Projects
-            </a>
-            <a href="#experience" className="navbar-section">
-                Experience
-            </a>
             <a href="#" className="navbar-section">
-                Home
+                <FontAwesomeIcon className="navbar-icon" icon={faSortUp} />
             </a>
         </div>
     );
