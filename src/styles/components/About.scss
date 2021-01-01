@@ -23,7 +23,6 @@
     & > * {
         box-sizing: border-box;
         width: 100%;
-        padding-left: 10vh;
         padding-right: 10vh;
     }
 }
@@ -41,6 +40,7 @@
 .about-pic {
     border-radius: 50%;
     height: 40vh;
+    padding-right: 10vh;
 }
 
 .about-pic-container {
