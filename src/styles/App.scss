@@ -58,7 +58,7 @@ canvas {
         width: 100%;
     }
 
-    $children: 11;
+    $children: 12;
     @for $i from 0 to $children {
         & > *:nth-child(#{$i + 1}) {
             z-index: #{- (($children)- ($i))};
@@ -94,7 +94,7 @@ canvas {
     font-weight: 700;
     line-height: 0.9em;
     white-space: nowrap;
-    padding-bottom: 5vh;
+    padding-bottom: 7.5vh;
 }
 
 .shipwreck {

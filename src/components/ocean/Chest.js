@@ -4,7 +4,7 @@ function Chest() {
             <img
                 className="chest"
                 src="./ocean/chest.png"
-                style={{ top: "82.5vh", left: "75.5vw" }}
+                style={{ top: "82.5vh", left: "76.5vw" }}
             />
         </div>
     );

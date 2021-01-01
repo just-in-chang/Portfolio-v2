@@ -1,6 +1,7 @@
 import Bio from "./components/Bio";
 import Chest from "./components/ocean/Chest";
 import Hill from "./components/ocean/Hill";
+import Icons from "./components/Icons";
 import Jellyfish from "./components/ocean/Jellyfish";
 import Lights from "./components/ocean/Lights";
 import Shipwreck from "./components/ocean/Shipwreck";
@@ -62,11 +63,11 @@ function App() {
                 />
             </Parallax>
 
-            <Parallax speed={-14.25}>
+            <Parallax speed={-15}>
                 <Turtle />
             </Parallax>
 
-            <Parallax speed={-10}>
+            <Parallax speed={-11}>
                 <Jellyfish />
             </Parallax>
 
@@ -118,6 +119,7 @@ function App() {
                 <Lights width={width} height={height} />
                 <Bio />
             </Parallax>
+            <Icons />
         </div>
     );
 }

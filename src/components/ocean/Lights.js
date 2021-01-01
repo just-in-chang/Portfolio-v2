@@ -6,22 +6,22 @@ function Lights(props) {
     const leftLight = (ctx, time) => {
         ctx.beginPath();
         ctx.moveTo(
-            props.width * 0.15 -
+            props.width * 0.125 -
                 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
             0
         );
         ctx.lineTo(
-            props.width * 0.2 -
+            props.width * 0.175 -
                 10 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
             props.height
         );
         ctx.lineTo(
-            props.width * 0.3 +
+            props.width * 0.275 +
                 10 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
             props.height
         );
         ctx.lineTo(
-            props.width * 0.2 +
+            props.width * 0.175 +
                 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
             0
         );

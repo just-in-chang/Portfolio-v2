@@ -12,9 +12,7 @@ function Icons() {
                 className="icon"
                 icon={faFile}
                 onClick={() => {
-                    window.open(
-                        "https://drive.google.com/file/d/1xAvThu67bb_-GqvdBXSydahaPtVK3TwR/view"
-                    );
+                    window.open("./resume.pdf");
                 }}
             />
             <FontAwesomeIcon

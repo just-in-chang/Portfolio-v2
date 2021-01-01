@@ -1,6 +1,6 @@
 .icon {
     color: black !important;
-    font-size: 4vh;
+    font-size: 2vh;
     padding: 1vh;
     &:hover {
         cursor: pointer;
@@ -10,6 +10,13 @@
 .icon-container {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    margin: 1vh;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    padding-top: 1vh;
+    padding-left: 2vh;
+    top: 0;
+    left: 0;
+    width: 2vh;
+    height: auto;
 }
