@@ -37,7 +37,6 @@
 }
 
 .about-pic {
-    // box-sizing: border-box;
     border-radius: 50%;
     height: 40vh;
     margin-right: 10vh;
@@ -71,8 +70,13 @@
         text-align: center;
     }
 
+    .about-pic {
+        margin-right: 0;
+    }
+
     .about-pic-container {
         box-sizing: border-box;
+        justify-content: center;
         margin-top: 10vh;
     }
 }

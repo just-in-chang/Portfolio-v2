@@ -126,6 +126,14 @@ canvas {
 }
 
 @media only screen and (max-width: 500px) {
+    .ocean-title {
+        font-size: 5rem;
+    }
+
+    .ocean-title2 {
+        font-size: 2em;
+    }
+
     .shipwreck {
         display: none;
     }
