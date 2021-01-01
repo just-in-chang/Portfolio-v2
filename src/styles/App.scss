@@ -120,3 +120,21 @@ canvas {
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 }
+
+.water {
+    background: #63d1f2;
+}
+
+@media only screen and (max-width: 500px) {
+    .shipwreck {
+        display: none;
+    }
+
+    .jellyfish {
+        display: none;
+    }
+
+    .ocean > *:nth-child(5) {
+        display: none;
+    }
+}

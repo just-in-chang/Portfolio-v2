@@ -32,7 +32,6 @@ function Hill(props) {
     return (
         <canvas
             ref={hillRef}
-            id="hill"
             width={window.innerWidth}
             height={window.innerHeight}
         />

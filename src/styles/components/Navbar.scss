@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    overflow: hidden;
+    position: fixed;
+    padding-top: 1vh;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.navbar-section {
+    text-decoration: none;
+    color: black !important;
+    font-size: 3vh;
+    padding: 1vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    font-family: "Josefin Sans", sans-serif;
+}

@@ -14,7 +14,7 @@ function Water(props) {
     return (
         <canvas
             ref={waterRef}
-            id="water"
+            className="water"
             width={window.innerWidth}
             height={window.innerHeight}
         />
