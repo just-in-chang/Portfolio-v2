@@ -3,9 +3,9 @@
     margin-top: -0.4vh;
     height: 100.4vh;
     width: 100%;
-    background-image: linear-gradient(#e8ca84, white);
+    background-image: linear-gradient(#e8ca84 0%, white 33%);
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     overflow: hidden;
 }
@@ -22,7 +22,6 @@
     & > * {
         box-sizing: border-box;
         width: 100%;
-        padding-right: 10vh;
     }
 }
 
@@ -68,6 +67,10 @@
         padding-left: 4vh;
         padding-right: 4vh;
         text-align: center;
+    }
+
+    .about-gap {
+        display: none;
     }
 
     .about-pic {

@@ -1,6 +1,7 @@
 function About() {
     return (
         <div id="about" className="about">
+            <div className="about-gap" />
             <div className="about-pic-container">
                 <img className="about-pic" src="./me.jpg" />
             </div>
@@ -12,6 +13,7 @@ function About() {
                     believe in hard work, smart work, and teamwork.
                 </div>
             </div>
+            <div className="about-gap" />
         </div>
     );
 }
