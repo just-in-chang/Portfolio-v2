@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 .about {
     margin-top: -0.4vh;
     height: 100.4vh;
@@ -38,9 +37,10 @@
 }
 
 .about-pic {
+    // box-sizing: border-box;
     border-radius: 50%;
     height: 40vh;
-    padding-right: 10vh;
+    margin-right: 10vh;
 }
 
 .about-pic-container {
