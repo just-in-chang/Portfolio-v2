@@ -19,7 +19,7 @@ function Projects() {
                     description="A widget that utilizes Dijkstra's, A*, and Kruskal's algorithm to generates and solves mazes. "
                     src="./experience/pathfinder.jpg"
                     skills={["javascript", "html", "css"]}
-                    link="/pathfinder"
+                    link="/#/pathfinder"
                 />
                 <Job
                     title="Akira Bot"
