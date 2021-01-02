@@ -1,12 +1,23 @@
 function Job(props) {
     return (
-        <div className="job-container">
+        <div
+            className={
+                "job-container " + (props.link == null ? "" : "job-link")
+            }
+            onClick={() => {
+                if (props.link != null) {
+                    window.open(props.link);
+                }
+            }}
+        >
             <div className="job">
                 <div className="job-text">
                     <div className="job-title">{props.title}</div>
                     <div className="job-details">
-                        <div className="job-company">{props.company}</div>
-                        {": " +
+                        <div className="job-company">
+                            {props.company != null && props.company}
+                        </div>
+                        {(props.company == null ? "" : ": ") +
                             props.start +
                             (props.end == undefined ? "" : ` - ${props.end}`)}
                     </div>

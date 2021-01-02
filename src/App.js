@@ -6,6 +6,7 @@ import Icons from "./components/Icons";
 import Jellyfish from "./components/ocean/Jellyfish";
 import Lights from "./components/ocean/Lights";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Shipwreck from "./components/ocean/Shipwreck";
 import Turtle from "./components/ocean/Turtle";
 import Water from "./components/ocean/Water";
@@ -121,6 +122,7 @@ function App() {
                 <Lights width={width} height={height} />
                 <About />
                 <Experience />
+                <Projects />
             </Parallax>
 
             <>
