@@ -12,9 +12,7 @@ ReactDOM.render(
             <Route exact path="/">
                 <App />
             </Route>
-            <Route exact path="/pathfinder">
-                <Pathfinder />
-            </Route>
+            <Route exact path="/pathfinder" component={() => <Pathfinder />} />
         </Router>
     </React.StrictMode>,
     document.getElementById("root")
