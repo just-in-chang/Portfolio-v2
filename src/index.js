@@ -9,9 +9,7 @@ import "./styles.scss";
 ReactDOM.render(
     <React.StrictMode>
         <Router basename={"/"}>
-            <Route exact path="/">
-                <App />
-            </Route>
+            <Route exact path="/" component={App} />
             <Route path="/pathfinder" component={Pathfinder} />
         </Router>
     </React.StrictMode>,
