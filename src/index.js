@@ -8,7 +8,7 @@ import "./styles.scss";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
+        <Router basename={"/"}>
             <Route exact path="/">
                 <App />
             </Route>
