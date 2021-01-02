@@ -32,6 +32,11 @@
     box-shadow: 0 0 3vh 3vh rgba(0, 0, 0, 0.075);
     overflow: hidden;
     border-radius: 5vh;
+    transition: 0.25s;
+
+    &:hover {
+        box-shadow: 0 0 3vh 3vh rgba(0, 0, 0, 0.15);
+    }
 }
 
 .job-company {
