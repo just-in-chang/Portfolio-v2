@@ -1,4 +1,4 @@
-import Job from "./experience/Job";
+import Job from "./Job";
 
 function Experience() {
     return (
@@ -21,6 +21,7 @@ function Experience() {
                         "Worked with a scrum team in biweekly sprints to develop products including NPO Core, the company blog, and the company website. "
                     }
                     src="./experience/ortexo.png"
+                    skills={["reactjs", "expressjs", "mongodb"]}
                 />
                 <Job
                     title="Front-end Web Development Intern"
@@ -31,6 +32,7 @@ function Experience() {
                         "Developed the front-end of the company website. "
                     }
                     src="./experience/sustain.png"
+                    skills={["reactjs"]}
                 />
             </div>
         </div>

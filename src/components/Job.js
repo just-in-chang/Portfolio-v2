@@ -13,7 +13,12 @@ function Job(props) {
                     <div className="job-description">
                         {props.description != null && props.description}
                     </div>
-                    <div className="job-skills"></div>
+                    <div className="job-skills">
+                        {props.skills != null &&
+                            props.skills.map((skill) => (
+                                <img src={`./experience/skills/${skill}.png`} />
+                            ))}
+                    </div>
                 </div>
                 <div className="job-image-container">
                     <img className="job-image" src={props.src} />
