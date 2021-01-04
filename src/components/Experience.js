@@ -6,12 +6,6 @@ function Experience() {
             <div className="experience-label">Experience</div>
             <div className="experience-jobs">
                 <Job
-                    title="Incoming Web Apps Intern"
-                    company="AppLovin"
-                    start="June 2021"
-                    src="./experience/applovin.png"
-                />
-                <Job
                     title="Software Engineer"
                     company="Ortexo"
                     start="July 2020"
