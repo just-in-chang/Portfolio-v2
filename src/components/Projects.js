@@ -26,7 +26,7 @@ function Projects() {
                     start="August 2019"
                     description="A discord bot that helped manage the point system for a 100+ player game. "
                     src="./experience/akira.jpg"
-                    skills={["javascript", "nodejs"]}
+                    skills={["nodejs"]}
                     link="https://github.com/just-in-chang/Akira-Bot"
                 />
                 <Job
