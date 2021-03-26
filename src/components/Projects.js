@@ -6,6 +6,14 @@ function Projects() {
             <div className="experience-label">Projects</div>
             <div className="experience-jobs">
                 <Job
+                    title="Monopl.io"
+                    start="January 2020"
+                    description="Monopl.io is an .io style, open source Monopoly, featuring quick, easy game setup and simple, self-explanatory controls. "
+                    src="./experience/monoplio.png"
+                    skills={["reactjs", "rails", "graphql", "apollo"]}
+                    link="http://monopl.io/"
+                />
+                <Job
                     title="Jelli"
                     start="September 2020"
                     description="Jelli is a full-stack web application to help its users manage their projects and tasks through a card based organization system. "
