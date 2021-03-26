@@ -11,7 +11,7 @@ function Projects() {
                     description="Jelli is a full-stack web application to help its users manage their projects and tasks through a card based organization system. "
                     src="./experience/jelli.jpg"
                     skills={["reactjs", "django", "heroku"]}
-                    link="https://just-in-chang.github.io/jelli-client"
+                    link="https://just-in-chang.github.io/jelli-deploy"
                 />
                 <Job
                     title="Pathfinder"
