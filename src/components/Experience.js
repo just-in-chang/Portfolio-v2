@@ -15,7 +15,7 @@ function Experience() {
                     skills={["reactjs", "expressjs", "mongodb"]}
                 />
                 <Job
-                    title="Front-end Web Development Intern"
+                    title="Software Engineer Intern"
                     company="SUSTaiN"
                     start="March 2019"
                     end="July 2019"
