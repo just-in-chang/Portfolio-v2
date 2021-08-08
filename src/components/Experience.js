@@ -6,6 +6,15 @@ function Experience() {
             <div className="experience-label">Experience</div>
             <div className="experience-jobs">
                 <Job
+                    title="Web Apps Intern"
+                    company="AppLovin"
+                    start="June 2021"
+                    end="Present"
+                    description="Introduced test-driven development into the data aggregation projects and designed the tesing framework used to provide to provide a simple and standardized method to test all third-party data collection. "
+                    src="./experience/applovin.png"
+                    skills={["java", "maven", "jenkins"]}
+                />
+                <Job
                     title="Software Engineer Intern"
                     company="Ortexo"
                     start="July 2020"
