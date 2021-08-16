@@ -10,7 +10,7 @@ function Experience() {
                     company="AppLovin"
                     start="June 2021"
                     end="Present"
-                    description="Introduced test-driven development into the data aggregation projects and designed the tesing framework used to provide to provide a simple and standardized method to test all third-party data collection. "
+                    description="Introduced test-driven development into the data aggregation projects and designed the testing framework used to provide to provide a simple and standardized method to test all third-party data collection. "
                     src="./experience/applovin.png"
                     skills={["java", "maven", "jenkins"]}
                 />
