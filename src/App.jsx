@@ -53,7 +53,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/">
+    <Router>
       <Route
         exact
         path="/"
