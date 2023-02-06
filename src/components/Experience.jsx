@@ -29,7 +29,7 @@ function Experience() {
           company="Sei Labs"
           start="June 2022"
           end="September 2022"
-          description="Developed an ETL pipelines and additional tooling to automate the flow of data and improve the developer experience. "
+          description="Helped develop the DeFi infrastructure and ecosystem on Sei. "
           src="./experience/sei.png"
           skills={['rust', 'golang', 'nodejs', 'reactjs']}
         />
