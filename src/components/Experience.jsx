@@ -7,6 +7,15 @@ function Experience() {
       <div className="experience-label">Experience</div>
       <div className="experience-jobs">
         <Job
+          title="Software Engineer Intern"
+          company="AppLovin"
+          start="January 2023"
+          end="Present"
+          description="Investigating use cases for a Data Lakehouse architecture in the AppLovin data stack with Apache Iceberg. "
+          src="./experience/applovin.png"
+          skills={['iceberg', 'spark', 'gcp', 'hdfs']}
+        />
+        <Job
           title="Undergraduate Researcher"
           company="UCSB NLP Group"
           start="September 2021"

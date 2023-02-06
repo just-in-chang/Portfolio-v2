@@ -14,9 +14,10 @@ function About() {
       <div className="about-bio-container">
         <div className="about-bio-title">Bio</div>
         <div className="about-bio-desc">
-          I am an exuberant, open-minded, and dedicated software
-          engineer interested in all aspects of computer science. I
-          believe in hard work, smart work, and teamwork.
+          I am a software engineer currently studying at UC Santa Barbara.
+          I enjoy working with cutting edge technologies to solve groundbreaking problems.
+          My current interests include data infrastructure, blockchain design,
+          and various topics in theoretical computer science.
         </div>
       </div>
       <div className="about-gap" />
