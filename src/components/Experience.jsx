@@ -10,8 +10,8 @@ function Experience() {
           title="Software Engineer Intern"
           company="AppLovin"
           start="January 2023"
-          end="Present"
-          description="Investigating use cases for a Data Lakehouse architecture in the AppLovin data stack with Apache Iceberg. "
+          end="March 2023"
+          description="Investigated and implemented features for a Data Lakehouse architecture in the AppLovin data stack to optimize data storage and query performance. "
           src="./experience/applovin.png"
           skills={['iceberg', 'spark', 'gcp', 'hdfs']}
         />
