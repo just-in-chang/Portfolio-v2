@@ -9,7 +9,7 @@ function Projects() {
         <Job
           title="Wibble"
           start="August 2021"
-          description="Monopl.io is an .io style, open source Monopoly, featuring quick, easy game setup and simple, self-explanatory controls. "
+          description="Wibble is an app that helps software engineers track the progress of their job applications. "
           src="./experience/wibble.png"
           skills={['elixir', 'phoenix', 'reactjs', 'postgres']}
           link="https://wibble.justinchang.dev/"
