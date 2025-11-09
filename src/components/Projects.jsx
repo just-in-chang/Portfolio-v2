@@ -1,5 +1,5 @@
-import React from 'react';
-import Job from './Job';
+import React from "react";
+import Job from "./Job";
 
 function Projects() {
   return (
@@ -11,7 +11,7 @@ function Projects() {
           start="August 2021"
           description="Wibble is an app that helps software engineers track the progress of their job applications. "
           src="./experience/wibble.png"
-          skills={['elixir', 'phoenix', 'reactjs', 'postgres']}
+          skills={["elixir", "phoenix", "reactjs", "postgres"]}
           link="https://wibble.justinchang.dev/"
         />
         <Job
@@ -19,7 +19,14 @@ function Projects() {
           start="January 2021"
           description="Monopl.io is an .io style, open source Monopoly, featuring quick, easy game setup and simple, self-explanatory controls. "
           src="./experience/monoplio.png"
-          skills={['reactjs', 'rails', 'graphql', 'apollo', 'postgres', 'redis']}
+          skills={[
+            "reactjs",
+            "rails",
+            "graphql",
+            "apollo",
+            "postgres",
+            "redis",
+          ]}
           link="https://monopl.io/"
         />
         <Job
@@ -27,7 +34,7 @@ function Projects() {
           start="September 2020"
           description="Jelli is a full-stack web application to help its users manage their projects and tasks through a card based organization system. "
           src="./experience/jelli.jpg"
-          skills={['reactjs', 'django', 'postgres', 'heroku']}
+          skills={["reactjs", "django", "postgres", "heroku"]}
           link="https://just-in-chang.github.io/jelli-deploy"
         />
         <Job
@@ -35,7 +42,7 @@ function Projects() {
           start="July 2020"
           description="A widget that utilizes Dijkstra's, A*, and Kruskal's algorithm to generates and solves mazes. "
           src="./experience/pathfinder.jpg"
-          skills={['javascript', 'html', 'css']}
+          skills={["javascript", "html", "css"]}
           link="/pathfinder"
         />
         <Job
@@ -43,7 +50,7 @@ function Projects() {
           start="August 2019"
           description="A discord bot that helped manage the point system for a 100+ player game. "
           src="./experience/akira.jpg"
-          skills={['nodejs']}
+          skills={["nodejs"]}
           link="https://github.com/just-in-chang/Akira-Bot"
         />
         <Job
@@ -51,7 +58,7 @@ function Projects() {
           start="April 2019"
           description="A JavaFX drag and drop development environment for JavaFX GUI components and applications. "
           src="./experience/cookieide.jpg"
-          skills={['java']}
+          skills={["java"]}
           link="https://youtu.be/5Gmh-W4f8nI"
         />
       </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Turtle() {
   return (
@@ -7,7 +7,7 @@ function Turtle() {
         className="turtle"
         alt="Turtle GIF"
         src="./ocean/turtle.png"
-        style={{ left: '5vw' }}
+        style={{ left: "5vw" }}
       />
     </div>
   );

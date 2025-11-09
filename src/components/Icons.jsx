@@ -1,7 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import {
+  faGithub,
+  faGoogleScholar,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
 function Icons() {
   return (
@@ -13,21 +17,28 @@ function Icons() {
         className="icon"
         icon={faFile}
         onClick={() => {
-          window.open('./resume.pdf');
+          window.open("./resume.pdf");
         }}
       />
       <FontAwesomeIcon
         className="icon"
         icon={faGithub}
         onClick={() => {
-          window.open('https://github.com/just-in-chang');
+          window.open("https://github.com/just-in-chang");
         }}
       />
       <FontAwesomeIcon
         className="icon"
         icon={faLinkedin}
         onClick={() => {
-          window.open('https://www.linkedin.com/in/just-in-chang');
+          window.open("https://www.linkedin.com/in/just-in-chang");
+        }}
+      />
+      <FontAwesomeIcon
+        className="icon"
+        icon={faGoogleScholar}
+        onClick={() => {
+          window.open("https://scholar.google.com/citations?user=ArgoXO0AAAAJ");
         }}
       />
     </div>

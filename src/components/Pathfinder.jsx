@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Row } from 'react-bootstrap';
-import RangeSlider from 'react-bootstrap-range-slider';
-import Maze from './Maze';
+import React, { useState } from "react";
+import { Row } from "react-bootstrap";
+import RangeSlider from "react-bootstrap-range-slider";
+import Maze from "./Maze";
 
 function Pathfinder() {
   const [value, setValue] = useState(31);

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 function Lights(props) {
   const lightsRef = useRef(null);
@@ -6,24 +6,24 @@ function Lights(props) {
   const leftLight = (ctx, time) => {
     ctx.beginPath();
     ctx.moveTo(
-      props.width * 0.125
-                - 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      0,
+      props.width * 0.125 -
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      0
     );
     ctx.lineTo(
-      props.width * 0.175
-                - 10 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      props.height,
+      props.width * 0.175 -
+        10 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      props.height
     );
     ctx.lineTo(
-      props.width * 0.275
-                + 10 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      props.height,
+      props.width * 0.275 +
+        10 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      props.height
     );
     ctx.lineTo(
-      props.width * 0.175
-                + 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      0,
+      props.width * 0.175 +
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      0
     );
     ctx.fill();
     ctx.closePath();
@@ -32,24 +32,24 @@ function Lights(props) {
   const middleLight = (ctx, time) => {
     ctx.beginPath();
     ctx.moveTo(
-      props.width * 0.8
-                - 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      0,
+      props.width * 0.8 -
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      0
     );
     ctx.lineTo(
-      props.width * 0.725
-                - 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      props.height,
+      props.width * 0.725 -
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      props.height
     );
     ctx.lineTo(
-      props.width * 0.775
-                + 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      props.height,
+      props.width * 0.775 +
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      props.height
     );
     ctx.lineTo(
-      props.width * 0.85
-                + 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      0,
+      props.width * 0.85 +
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      0
     );
     ctx.fill();
     ctx.closePath();
@@ -58,24 +58,24 @@ function Lights(props) {
   const rightLight = (ctx, time) => {
     ctx.beginPath();
     ctx.moveTo(
-      props.width * 0.875
-                - 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      0,
+      props.width * 0.875 -
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      0
     );
     ctx.lineTo(
-      props.width * 0.8
-                - 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      props.height,
+      props.width * 0.8 -
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      props.height
     );
     ctx.lineTo(
-      props.width * 0.85
-                + 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      props.height,
+      props.width * 0.85 +
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      props.height
     );
     ctx.lineTo(
-      props.width * 0.925
-                + 5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
-      0,
+      props.width * 0.925 +
+        5 * Math.sin((time.getMilliseconds() * Math.PI) / 1000),
+      0
     );
     ctx.fill();
     ctx.closePath();
@@ -84,7 +84,7 @@ function Lights(props) {
   const drawLights = (ctx) => {
     const time = new Date();
     ctx.clearRect(0, 0, props.width, props.height);
-    ctx.fillStyle = 'rgba(255,255,255,0.2)';
+    ctx.fillStyle = "rgba(255,255,255,0.2)";
 
     leftLight(ctx, time);
     middleLight(ctx, time);
@@ -95,7 +95,7 @@ function Lights(props) {
   };
 
   useEffect(() => {
-    const ctx = lightsRef.current.getContext('2d');
+    const ctx = lightsRef.current.getContext("2d");
     ctx.width = props.width;
     ctx.height = props.height;
     drawLights(ctx);

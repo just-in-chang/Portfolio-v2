@@ -5,26 +5,36 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write
+    
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
       with:
-        node-version: 16
-    - run : yarn install --frozen-lockfile
-      shell: bash
-    - run : yarn build
-      shell: bash
-    - run : git config user.name github-actions
-      shell: bash
-    - run : git config user.email github-actions@github.com
-      shell: bash
-    - run : git --work-tree build add --all
-      shell: bash
-    - run : git commit -m "Automatic Deploy action run by github-actions"
-      shell: bash
-    - run : git push origin HEAD:gh-pages --force
-      shell: bash
+        version: 9
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+        cache: 'pnpm'
+        
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      
+    - name: Build
+      run: pnpm build
+      
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        cname: justinchang.dev

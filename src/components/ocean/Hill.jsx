@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 function Hill(props) {
   const hillRef = useRef(null);
@@ -9,7 +9,7 @@ function Hill(props) {
     const hill = new Image();
     hill.src = props.imgLink;
     hill.onload = () => {
-      const pattern = ctx.createPattern(hill, 'repeat');
+      const pattern = ctx.createPattern(hill, "repeat");
       ctx.fillStyle = pattern;
 
       let fillStart = 0;
@@ -23,7 +23,7 @@ function Hill(props) {
   };
 
   useEffect(() => {
-    const ctx = hillRef.current.getContext('2d');
+    const ctx = hillRef.current.getContext("2d");
     ctx.width = props.width;
     ctx.height = props.height;
     drawHill(ctx);

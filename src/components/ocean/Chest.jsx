@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Chest() {
   return (
@@ -7,7 +7,7 @@ function Chest() {
         className="chest"
         alt="Chest GIF"
         src="./ocean/chest.png"
-        style={{ top: '82.5vh', left: '76.5vw' }}
+        style={{ top: "82.5vh", left: "76.5vw" }}
       />
     </div>
   );

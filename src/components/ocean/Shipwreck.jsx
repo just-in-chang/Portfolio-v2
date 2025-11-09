@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Shipwreck() {
   return (
@@ -7,7 +7,7 @@ function Shipwreck() {
         className="shipwreck"
         alt="Shipwreck GIF"
         src="./ocean/shipwreck.png"
-        style={{ top: '65vh', left: '10vw' }}
+        style={{ top: "65vh", left: "10vw" }}
       />
     </div>
   );

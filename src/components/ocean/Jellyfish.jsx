@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Jellyfish() {
   return (
@@ -7,7 +7,7 @@ function Jellyfish() {
         className="jellyfish"
         alt="Jellyfish GIF"
         src="./ocean/jellyfish.png"
-        style={{ left: '92vw' }}
+        style={{ left: "92vw" }}
       />
     </div>
   );

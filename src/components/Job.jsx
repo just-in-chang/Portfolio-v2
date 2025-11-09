@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
 function Job(props) {
   return (
     <div
-      className={
-        `job-container ${props.link == null ? '' : 'job-link'}`
-      }
+      className={`job-container ${props.link == null ? "" : "job-link"}`}
       onClick={() => {
         if (props.link != null) {
           window.open(props.link);
@@ -19,16 +17,16 @@ function Job(props) {
             <div className="job-company">
               {props.company != null && props.company}
             </div>
-            {(props.company == null ? '' : ': ')
-              + props.start
-              + (props.end === undefined ? '' : ` - ${props.end}`)}
+            {(props.company == null ? "" : ": ") +
+              props.start +
+              (props.end === undefined ? "" : ` - ${props.end}`)}
           </div>
           <div className="job-description">
             {props.description != null && props.description}
           </div>
           <div className="job-skills">
-            {props.skills != null
-              && props.skills.map((skill) => (
+            {props.skills != null &&
+              props.skills.map((skill) => (
                 <img src={`./experience/skills/${skill}.png`} alt="Skill" />
               ))}
           </div>
